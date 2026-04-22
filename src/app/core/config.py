@@ -10,7 +10,7 @@ class Settings:
     tg_api_server_url = env.str("TG_API_SERVER_URL", default="https://api.telegram.org")
     admins_ids = env.list("ADMINS_IDS", default=[7892805795])
 
-    database_url = env.str("DATABASE_URL" default=None) or env.str("DATABASE_URL", default="postgresql://media_1rb3_user:2oUMuOnjKhiDpDOid0SW5TfaBpiQTowQ@host:5432/media_1rb3")
+    database_url = env.str("DATABASE_URL", default=None) or env.str("DATABASE_URL")
     db_name = env.str("POSTGRES_DB", default=None) or env.str("PGDATABASE", default="media_1rb3")
     db_user = env.str("POSTGRES_USER", default=None) or env.str("PGUSER", default="media_1rb3_user")
     db_password = env.str("POSTGRES_PASSWORD", default=None) or env.str("PGPASSWORD", default="2oUMuOnjKhiDpDOid0SW5TfaBpiQTowQ")
